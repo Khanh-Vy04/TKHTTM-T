@@ -4,7 +4,7 @@ require_once __DIR__ . '/../../../config/database.php';
 
 // Kiểm tra quyền admin (nếu cần)
 // if (!isset($_SESSION['admin_id'])) {
-//     header('Location: /WEB_MXH/admin/login.php');
+//     header('Location: /WEB_MXH-main/admin/login.php');
 //     exit;
 // }
 

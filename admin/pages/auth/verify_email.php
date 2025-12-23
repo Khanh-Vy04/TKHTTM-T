@@ -1,5 +1,5 @@
 <?php
-include $_SERVER['DOCUMENT_ROOT'] . "/WEB_MXH/config/database.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/WEB_MXH-main/config/database.php";
 
 header('Content-Type: application/json');
 $data = json_decode(file_get_contents("php://input"), true);

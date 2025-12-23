@@ -74,11 +74,11 @@ function getStatusText($stock) {
     <meta charset="utf-8">
     <title>Chi Tiết Sản Phẩm - <?php echo htmlspecialchars($product['product_name']); ?></title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="/WEB_MXH/admin/img/favicon.ico" rel="icon">
-    <link href="/WEB_MXH/admin/pages/dashboard/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/WEB_MXH-main/admin/img/favicon.ico" rel="icon">
+    <link href="/WEB_MXH-main/admin/pages/dashboard/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="/WEB_MXH/admin/pages/dashboard/css/style.css" rel="stylesheet">
+    <link href="/WEB_MXH-main/admin/pages/dashboard/css/style.css" rel="stylesheet">
     <style>
         .product-detail-container {
             background: #ebecef;
@@ -337,7 +337,7 @@ function getStatusText($stock) {
                                         <img src="<?php echo htmlspecialchars($product['image_url']); ?>" 
                                              alt="<?php echo htmlspecialchars($product['product_name']); ?>"
                                              class="product-image"
-                                             onerror="this.src='/WEB_MXH/admin/img/no-image.png'">
+                                             onerror="this.src='/WEB_MXH-main/admin/img/no-image.png'">
                                     </div>
                                 </div>
                                 
@@ -457,7 +457,7 @@ function getStatusText($stock) {
                                     <img src="<?php echo htmlspecialchars($product['artist_image']); ?>" 
                                          alt="<?php echo htmlspecialchars($product['artist_name']); ?>"
                                          class="artist-image me-3"
-                                         onerror="this.src='/WEB_MXH/admin/img/default-avatar.png'">
+                                         onerror="this.src='/WEB_MXH-main/admin/img/default-avatar.png'">
                                     <?php endif; ?>
                                     <div>
                                         <div class="artist-name"><?php echo htmlspecialchars($product['artist_name']); ?></div>
@@ -499,6 +499,6 @@ function getStatusText($stock) {
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/WEB_MXH/admin/pages/dashboard/js/main.js"></script>
+<script src="/WEB_MXH-main/admin/pages/dashboard/js/main.js"></script>
 </body>
 </html> 

@@ -88,11 +88,11 @@ if (isset($_POST['add_voucher'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thêm voucher - AuraDisc Admin</title>
-    <link href="/WEB_MXH/admin/img/favicon.ico" rel="icon">
-    <link href="/WEB_MXH/admin/pages/dashboard/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/WEB_MXH-main/admin/img/favicon.ico" rel="icon">
+    <link href="/WEB_MXH-main/admin/pages/dashboard/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="/WEB_MXH/admin/pages/dashboard/css/style.css" rel="stylesheet">
+    <link href="/WEB_MXH-main/admin/pages/dashboard/css/style.css" rel="stylesheet">
     <style>
         .preview-voucher {
             background: linear-gradient(135deg, #deccca);
@@ -356,14 +356,14 @@ if (isset($_POST['add_voucher'])) {
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/WEB_MXH/admin/pages/dashboard/lib/chart/chart.min.js"></script>
-<script src="/WEB_MXH/admin/pages/dashboard/lib/easing/easing.min.js"></script>
-<script src="/WEB_MXH/admin/pages/dashboard/lib/waypoints/waypoints.min.js"></script>
-<script src="/WEB_MXH/admin/pages/dashboard/lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="/WEB_MXH/admin/pages/dashboard/lib/tempusdominus/js/moment.min.js"></script>
-<script src="/WEB_MXH/admin/pages/dashboard/lib/tempusdominus/js/moment-timezone.min.js"></script>
-<script src="/WEB_MXH/admin/pages/dashboard/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-<script src="/WEB_MXH/admin/pages/dashboard/js/main.js"></script>
+<script src="/WEB_MXH-main/admin/pages/dashboard/lib/chart/chart.min.js"></script>
+<script src="/WEB_MXH-main/admin/pages/dashboard/lib/easing/easing.min.js"></script>
+<script src="/WEB_MXH-main/admin/pages/dashboard/lib/waypoints/waypoints.min.js"></script>
+<script src="/WEB_MXH-main/admin/pages/dashboard/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="/WEB_MXH-main/admin/pages/dashboard/lib/tempusdominus/js/moment.min.js"></script>
+<script src="/WEB_MXH-main/admin/pages/dashboard/lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="/WEB_MXH-main/admin/pages/dashboard/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="/WEB_MXH-main/admin/pages/dashboard/js/main.js"></script>
 <script>
     // Preview voucher real-time
     function updatePreview() {

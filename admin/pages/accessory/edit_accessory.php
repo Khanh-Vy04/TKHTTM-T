@@ -105,11 +105,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>Chỉnh sửa phụ kiện - AuraDisc Admin</title>
     
     <!-- CSS giống các trang khác -->
-    <link href="/WEB_MXH/admin/img/favicon.ico" rel="icon">
-    <link href="/WEB_MXH/admin/pages/dashboard/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/WEB_MXH-main/admin/img/favicon.ico" rel="icon">
+    <link href="/WEB_MXH-main/admin/pages/dashboard/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="/WEB_MXH/admin/pages/dashboard/css/style.css" rel="stylesheet">
+    <link href="/WEB_MXH-main/admin/pages/dashboard/css/style.css" rel="stylesheet">
     
     <style>
         .form-container {
@@ -588,7 +588,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/WEB_MXH/admin/pages/dashboard/js/main.js"></script>
+<script src="/WEB_MXH-main/admin/pages/dashboard/js/main.js"></script>
 
 <script>
     // Validate form trước khi submit

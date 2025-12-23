@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include $_SERVER['DOCUMENT_ROOT'] . "/WEB_MXH/config/database.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/WEB_MXH-main/config/database.php";
 ?>
 <!DOCTYPE html>
 <html lang="vi">
@@ -381,7 +381,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/WEB_MXH/config/database.php";
             </div>
 
             <div class="back-link">
-                <a href="/WEB_MXH/index.php">
+                <a href="/WEB_MXH-main/index.php">
                     <i class="fas fa-arrow-left me-1"></i> Quay lại đăng nhập
                 </a>
             </div>
@@ -611,7 +611,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/WEB_MXH/config/database.php";
                     
                     // Chuyển hướng về trang đăng nhập sau 2 giây
                     setTimeout(() => {
-                        window.location.href = "/WEB_MXH/index.php";
+                        window.location.href = "/WEB_MXH-main/index.php";
                     }, 2000);
                 } else {
                     showToast(data.message || "Có lỗi khi đổi mật khẩu.", true);

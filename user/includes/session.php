@@ -44,7 +44,7 @@ function logoutUser() {
 }
 
 // Hàm redirect nếu chưa login (dùng cho admin)
-function requireLogin($redirectUrl = '/WEB_MXH/index.php') {
+function requireLogin($redirectUrl = '/WEB_MXH-main/index.php') {
     if (!isLoggedIn()) {
         header("Location: $redirectUrl");
         exit();
@@ -88,7 +88,7 @@ function requireLoginWithPopup() {
                     <h3 style="margin-bottom: 20px; color: #333;">Cần Đăng Nhập</h3>
                     <p style="margin-bottom: 25px; color: #666;">Vui lòng đăng nhập để sử dụng tính năng này</p>
                     <div style="display: flex; gap: 15px; justify-content: center;">
-                        <a href="/WEB_MXH/index.php" class="btn btn-login" style="
+                        <a href="/WEB_MXH-main/index.php" class="btn btn-login" style="
                             background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
                             color: white;
                             padding: 12px 20px;

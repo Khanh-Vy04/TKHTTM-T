@@ -1202,7 +1202,7 @@ $cart_count = getCartItemCount();
 <body>
     <!-- Navigation -->
     <?php 
-    $base_path = '/WEB_MXH/user/';
+    $base_path = '/WEB_MXH-main/user/';
     include 'includes/navigation.php'; 
     ?>
 
@@ -1231,7 +1231,7 @@ $cart_count = getCartItemCount();
                         <h3>Cần đăng nhập</h3>
                         <p>Vui lòng đăng nhập để xem và quản lý giỏ hàng của bạn</p>
                         <div style="display: flex; gap: 20px; justify-content: center;">
-                            <a href="/WEB_MXH/index.php" class="btn-continue">
+                            <a href="/WEB_MXH-main/index.php" class="btn-continue">
                                 <i class="fa fa-sign-in"></i>
                                 Đăng nhập
                             </a>

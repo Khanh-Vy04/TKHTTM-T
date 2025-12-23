@@ -226,13 +226,13 @@ while ($stat = $stats_result->fetch_assoc()) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quản lý đơn hàng - Admin</title>
     <!-- Favicon -->
-    <link href="/WEB_MXH/admin/img/favicon.ico" rel="icon">
+    <link href="/WEB_MXH-main/admin/img/favicon.ico" rel="icon">
     <!-- Bootstrap & FontAwesome -->
-    <link href="/WEB_MXH/admin/pages/dashboard/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/WEB_MXH-main/admin/pages/dashboard/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Main Style -->
-    <link href="/WEB_MXH/admin/pages/dashboard/css/style.css" rel="stylesheet">
+    <link href="/WEB_MXH-main/admin/pages/dashboard/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="order_list.css" />
     
     <style>
@@ -779,7 +779,7 @@ while ($stat = $stats_result->fetch_assoc()) {
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/WEB_MXH/admin/pages/dashboard/js/main.js"></script>
+    <script src="/WEB_MXH-main/admin/pages/dashboard/js/main.js"></script>
     
     <script>
         let currentOrderForm = null;
@@ -787,7 +787,7 @@ while ($stat = $stats_result->fetch_assoc()) {
         
         function viewOrderDetail(orderId) {
             // Mở modal hoặc chuyển trang xem chi tiết
-            window.open(`/WEB_MXH/admin/pages/order/order_detail/order_detail.php?id=${orderId}`, '_blank');
+            window.open(`/WEB_MXH-main/admin/pages/order/order_detail/order_detail.php?id=${orderId}`, '_blank');
         }
         
         function handleStageChange(selectElement, orderId, amount, paymentMethod) {
@@ -848,7 +848,7 @@ while ($stat = $stats_result->fetch_assoc()) {
         function exportOrders() {
             // Xuất dữ liệu ra Excel
             const search = '<?php echo addslashes($search); ?>';
-            window.location.href = `/WEB_MXH/admin/pages/order/export_orders.php?search=${encodeURIComponent(search)}`;
+            window.location.href = `/WEB_MXH-main/admin/pages/order/export_orders.php?search=${encodeURIComponent(search)}`;
         }
         
         // Auto refresh notification

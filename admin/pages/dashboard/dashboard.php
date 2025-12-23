@@ -204,7 +204,7 @@ try {
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="/WEB_MXH/admin/img/favicon.ico" rel="icon">
+    <link href="/WEB_MXH-main/admin/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -216,14 +216,14 @@ try {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="/WEB_MXH/admin/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="/WEB_MXH/admin/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="/WEB_MXH-main/admin/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/WEB_MXH-main/admin/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="/WEB_MXH/admin/pages/dashboard/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/WEB_MXH-main/admin/pages/dashboard/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="/WEB_MXH/admin/pages/dashboard/css/style.css" rel="stylesheet">
+    <link href="/WEB_MXH-main/admin/pages/dashboard/css/style.css" rel="stylesheet">
     
     <!-- Custom Dashboard Styles - Brand Colors -->
     <style>
@@ -559,7 +559,7 @@ try {
                 <div class="table-custom text-center rounded p-4">
                     <div class="d-flex align-items-center justify-content-between mb-4">
                         <h6 class="mb-0">Đơn hàng gần đây</h6>
-                        <a href="/WEB_MXH/admin/pages/order/order_list/order_list.php" class="btn btn-primary btn-sm" style="color: white !important;">
+                        <a href="/WEB_MXH-main/admin/pages/order/order_list/order_list.php" class="btn btn-primary btn-sm" style="color: white !important;">
                             <i class="fas fa-eye me-2"></i>Xem tất cả
                         </a>
                     </div>
@@ -597,7 +597,7 @@ try {
                                             </td>
                                             <td>
                                                 <a class="btn btn-sm btn-primary" 
-                                                   href="/WEB_MXH/admin/pages/order/order_detail/order_detail.php?id=<?php echo $order['order_id']; ?>" 
+                                                   href="/WEB_MXH-main/admin/pages/order/order_detail/order_detail.php?id=<?php echo $order['order_id']; ?>" 
                                                    target="_blank" style="color: white !important;">Chi tiết</a>
                                             </td>
                                         </tr>
@@ -617,7 +617,7 @@ try {
                         <div class="messages-widget h-100 rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-2">
                                 <h6 class="mb-0">Tin nhắn gần đây</h6>
-                                <a href="/WEB_MXH/admin/pages/customer_support/message/message.php" class="btn btn-primary btn-sm" style="color: white !important;">
+                                <a href="/WEB_MXH-main/admin/pages/customer_support/message/message.php" class="btn btn-primary btn-sm" style="color: white !important;">
                                     <i class="fas fa-comments me-2"></i>Xem tất cả tin nhắn
                                 </a>
                             </div>
@@ -680,13 +680,13 @@ try {
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/WEB_MXH/admin/lib/chart/chart.min.js"></script>
-    <script src="/WEB_MXH/admin/lib/easing/easing.min.js"></script>
-    <script src="/WEB_MXH/admin/lib/waypoints/waypoints.min.js"></script>
-    <script src="/WEB_MXH/admin/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="/WEB_MXH/admin/lib/tempusdominus/js/moment.min.js"></script>
-    <script src="/WEB_MXH/admin/lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="/WEB_MXH/admin/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="/WEB_MXH-main/admin/lib/chart/chart.min.js"></script>
+    <script src="/WEB_MXH-main/admin/lib/easing/easing.min.js"></script>
+    <script src="/WEB_MXH-main/admin/lib/waypoints/waypoints.min.js"></script>
+    <script src="/WEB_MXH-main/admin/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/WEB_MXH-main/admin/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="/WEB_MXH-main/admin/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="/WEB_MXH-main/admin/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Template Javascript -->
     <script>
@@ -839,7 +839,7 @@ try {
                 exportBtn.disabled = true;
                 
                 // Tạo URL với tuần được chọn
-                const exportUrl = '/WEB_MXH/admin/pages/dashboard/export_dashboard_excel.php' + 
+                const exportUrl = '/WEB_MXH-main/admin/pages/dashboard/export_dashboard_excel.php' +
                                 (selectedWeek ? '?week=' + encodeURIComponent(selectedWeek) : '');
                 
                 // Tạo link download ẩn

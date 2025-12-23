@@ -26,7 +26,7 @@ function showLoginPopup() {
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
-                    <a href="/WEB_MXH/index.php" class="btn btn-primary">Đăng nhập</a>
+                    <a href="/WEB_MXH-main/index.php" class="btn btn-primary">Đăng nhập</a>
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@ function showLoginPopup() {
                     $("#loginRequiredModal").modal("show");
                 } else {
                     console.log("Vui lòng đăng nhập để tiếp tục!");
-                    window.location.href = "/WEB_MXH/index.php";
+                    window.location.href = "/WEB_MXH-main/index.php";
                 }
             }
         });

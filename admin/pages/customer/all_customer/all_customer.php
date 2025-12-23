@@ -116,13 +116,13 @@ $current_admin_id = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : 0;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Danh sách khách hàng - Admin</title>
     <!-- Favicon -->
-    <link href="/WEB_MXH/admin/img/favicon.ico" rel="icon">
+    <link href="/WEB_MXH-main/admin/img/favicon.ico" rel="icon">
     <!-- Bootstrap & FontAwesome -->
-    <link href="/WEB_MXH/admin/pages/dashboard/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/WEB_MXH-main/admin/pages/dashboard/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Main Style -->
-    <link href="/WEB_MXH/admin/pages/dashboard/css/style.css" rel="stylesheet">
+    <link href="/WEB_MXH-main/admin/pages/dashboard/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="all_customer.css" />
     <style>
         .page-title {
@@ -424,13 +424,13 @@ $current_admin_id = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : 0;
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/WEB_MXH/admin/pages/dashboard/js/main.js"></script>
+    <script src="/WEB_MXH-main/admin/pages/dashboard/js/main.js"></script>
     
     <script>
         function exportCustomers() {
             // Xuất danh sách khách hàng ra Excel
             const search = '<?php echo addslashes($search); ?>';
-            window.location.href = `/WEB_MXH/admin/pages/customer/export_customers.php?search=${encodeURIComponent(search)}`;
+            window.location.href = `/WEB_MXH-main/admin/pages/customer/export_customers.php?search=${encodeURIComponent(search)}`;
         }
         
         // Search form enhancement
@@ -495,7 +495,7 @@ $current_admin_id = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : 0;
                         buttonElement.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
                         
                         // Gửi AJAX request
-                        fetch('/WEB_MXH/admin/pages/customer/toggle_role.php', {
+                        fetch('/WEB_MXH-main/admin/pages/customer/toggle_role.php', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/x-www-form-urlencoded',

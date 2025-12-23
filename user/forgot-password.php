@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $insert_stmt->bind_param("iss", $user['user_id'], $reset_token, $expires_at);
             
             if ($insert_stmt->execute()) {
-                $reset_link = "http://localhost/WEB_MXH/user/reset-password.php?token=" . $reset_token;
+                $reset_link = "http://localhost/WEB_MXH-main/user/reset-password.php?token=" . $reset_token;
                 $message = 'Link đặt lại mật khẩu đã được tạo thành công! (Có hiệu lực trong 3 giờ)';
                 $message_type = 'success';
                 

@@ -75,11 +75,11 @@ if (isset($_POST['delete']) && isset($_POST['accessory_id'])) {
     <title>Quản Lý Accessories - AuraDisc Admin</title>
     
     <!-- CSS -->
-    <link href="/WEB_MXH/admin/img/favicon.ico" rel="icon">
-    <link href="/WEB_MXH/admin/pages/dashboard/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/WEB_MXH-main/admin/img/favicon.ico" rel="icon">
+    <link href="/WEB_MXH-main/admin/pages/dashboard/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="/WEB_MXH/admin/pages/dashboard/css/style.css" rel="stylesheet">
+    <link href="/WEB_MXH-main/admin/pages/dashboard/css/style.css" rel="stylesheet">
     
     <style>
         .content { background: #f3f4f6 !important; }
@@ -518,7 +518,7 @@ if (isset($_POST['delete']) && isset($_POST['accessory_id'])) {
 <div class="modal fade" id="deleteModal" tabindex="-1"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Xác Nhận Xóa</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Bạn có chắc chắn muốn xóa phụ kiện <strong id="accessoryName"></strong>?</p><p class="text-warning"><i class="fas fa-exclamation-triangle"></i> Hành động này không thể hoàn tác!</p></div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button><form method="POST" style="display: inline;"><input type="hidden" name="accessory_id" id="deleteAccessoryId"><button type="submit" name="delete" class="btn btn-danger"><i class="fas fa-trash"></i> Xóa</button></form></div></div></div></div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="/WEB_MXH/admin/pages/dashboard/dashboard.js"></script>
+<script src="/WEB_MXH-main/admin/pages/dashboard/dashboard.js"></script>
     <script>
         function deleteAccessory(id, name) {
             document.getElementById('deleteAccessoryId').value = id;

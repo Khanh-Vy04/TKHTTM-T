@@ -95,10 +95,10 @@ function timeAgo($datetime) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quản lý Chat Support</title>
-    <link href="/WEB_MXH/admin/img/favicon.ico" rel="icon">
-    <link href="/WEB_MXH/admin/pages/dashboard/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/WEB_MXH-main/admin/img/favicon.ico" rel="icon">
+    <link href="/WEB_MXH-main/admin/pages/dashboard/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="/WEB_MXH/admin/pages/dashboard/css/style.css" rel="stylesheet">
+    <link href="/WEB_MXH-main/admin/pages/dashboard/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="message.css">
 </head>
 <body>
@@ -300,7 +300,7 @@ function timeAgo($datetime) {
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/WEB_MXH/admin/pages/dashboard/dashboard.js"></script>
+<script src="/WEB_MXH-main/admin/pages/dashboard/dashboard.js"></script>
 <script>
 function selectSession(supportId) {
     window.location.href = 'message.php?id=' + supportId;

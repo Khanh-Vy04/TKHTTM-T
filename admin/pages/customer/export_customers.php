@@ -5,7 +5,7 @@ require_once __DIR__ . '/../../../includes/session.php';
 
 // Kiểm tra quyền admin
 if (!isAdmin()) {
-    header('Location: /WEB_MXH/admin/login.php');
+    header('Location: /WEB_MXH-main/admin/login.php');
     exit;
 }
 

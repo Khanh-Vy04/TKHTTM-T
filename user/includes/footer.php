@@ -22,11 +22,11 @@
 						</div><!--/.hm-foot-title-->
 						<div class="hm-foot-menu">
 							<ul>
-								<li><a href="/WEB_MXH/user/index.php">Trang chủ</a></li><!--/li-->
-								<li><a href="/WEB_MXH/user/new-arrivals.php">New Arrivals</a></li><!--/li-->
-								<li><a href="/WEB_MXH/user/Artists/Artists.php">Artists</a></li><!--/li-->
-								<li><a href="/WEB_MXH/user/genre/genres.php">Genres</a></li><!--/li-->
-								<li><a href="/WEB_MXH/user/accessories.php">Accessories</a></li><!--/li-->
+								<li><a href="/WEB_MXH-main/user/index.php">Trang chủ</a></li><!--/li-->
+								<li><a href="/WEB_MXH-main/user/new-arrivals.php">New Arrivals</a></li><!--/li-->
+								<li><a href="/WEB_MXH-main/user/Artists/Artists.php">Artists</a></li><!--/li-->
+								<li><a href="/WEB_MXH-main/user/genre/genres.php">Genres</a></li><!--/li-->
+								<li><a href="/WEB_MXH-main/user/accessories.php">Accessories</a></li><!--/li-->
 							</ul><!--/ul-->
 						</div><!--/.hm-foot-menu-->
 					</div><!--/.hm-footer-widget-->

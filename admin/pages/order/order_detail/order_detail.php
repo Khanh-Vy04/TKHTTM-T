@@ -8,7 +8,7 @@ $currentPage = 'order';
 $order_id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 
 if ($order_id === 0) {
-    header('Location: /WEB_MXH/admin/pages/order/order_list/order_list.php');
+    header('Location: /WEB_MXH-main/admin/pages/order/order_list/order_list.php');
     exit;
 }
 
@@ -40,7 +40,7 @@ $order_stmt->execute();
 $order_result = $order_stmt->get_result();
 
 if ($order_result->num_rows === 0) {
-    header('Location: /WEB_MXH/admin/pages/order/order_list/order_list.php');
+    header('Location: /WEB_MXH-main/admin/pages/order/order_list/order_list.php');
     exit;
 }
 
@@ -84,7 +84,7 @@ while ($item = $items_result->fetch_assoc()) {
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="/WEB_MXH/admin/img/favicon.ico" rel="icon">
+    <link href="/WEB_MXH-main/admin/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -96,11 +96,11 @@ while ($item = $items_result->fetch_assoc()) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="/WEB_MXH/admin/pages/dashboard/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/WEB_MXH-main/admin/pages/dashboard/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="/WEB_MXH/admin/pages/dashboard/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="/WEB_MXH/admin/pages/order/order_detail/order_detail.css" />
+    <link href="/WEB_MXH-main/admin/pages/dashboard/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/WEB_MXH-main/admin/pages/order/order_detail/order_detail.css" />
     
     <style>
         .content { background: #f3f4f6 !important; }
@@ -286,7 +286,7 @@ while ($item = $items_result->fetch_assoc()) {
                             </h2>
                         </div>
                         <div class="col-md-6 text-end">
-                            <a href="/WEB_MXH/admin/pages/order/order_list/order_list.php" class="btn btn-lg" style="background-color: #deccca !important; color: #412d3b !important; border-color: #deccca !important;">
+                            <a href="/WEB_MXH-main/admin/pages/order/order_list/order_list.php" class="btn btn-lg" style="background-color: #deccca !important; color: #412d3b !important; border-color: #deccca !important;">
                                 <i class="fas fa-arrow-left me-2"></i>Quay lại danh sách
                             </a>
                         </div>
@@ -487,7 +487,7 @@ while ($item = $items_result->fetch_assoc()) {
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/WEB_MXH/admin/pages/dashboard/js/main.js"></script>
+<script src="/WEB_MXH-main/admin/pages/dashboard/js/main.js"></script>
     
     <script>
         // Print function

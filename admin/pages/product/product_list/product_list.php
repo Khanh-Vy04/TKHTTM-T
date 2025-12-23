@@ -147,11 +147,11 @@ function getUrlWithParams($params) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quản Lý Sản Phẩm - AuraDisc</title>
-    <link href="/WEB_MXH/admin/img/favicon.ico" rel="icon">
-    <link href="/WEB_MXH/admin/pages/dashboard/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/WEB_MXH-main/admin/img/favicon.ico" rel="icon">
+    <link href="/WEB_MXH-main/admin/pages/dashboard/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="/WEB_MXH/admin/pages/dashboard/css/style.css" rel="stylesheet">
+    <link href="/WEB_MXH-main/admin/pages/dashboard/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="product_list.css" />
     <script>
         console.log('HTML head loaded');
@@ -247,7 +247,7 @@ function getUrlWithParams($params) {
                     <form method="GET" class="d-flex flex-grow-1">
                         <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm..." name="search" value="<?php echo htmlspecialchars($search); ?>">
                     </form>
-                    <a href="/WEB_MXH/admin/pages/product/add_product/add_product.php" class="add-btn">
+                    <a href="/WEB_MXH-main/admin/pages/product/add_product/add_product.php" class="add-btn">
                         <i class="fas fa-plus"></i> Thêm sản phẩm
                     </a>
                 </div>
@@ -362,7 +362,7 @@ function getUrlWithParams($params) {
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="/WEB_MXH/admin/pages/dashboard/js/main.js"></script>
+<script src="/WEB_MXH-main/admin/pages/dashboard/js/main.js"></script>
 <script src="product_list.js"></script>
 <script>
 // Đơn giản hóa - để Bootstrap tự xử lý dropdown như các trang admin khác

@@ -84,7 +84,7 @@ if ($is_logged_in) {
                         <h3 style="color: #666; margin-bottom: 15px; font-size: 1.8rem;">Cần đăng nhập</h3>
                         <p style="color: #999; margin-bottom: 40px; font-size: 1.1rem;">Vui lòng đăng nhập để xem thông tin cá nhân và quản lý tài khoản</p>
                         <div style="display: flex; gap: 20px; justify-content: center;">
-                            <a href="/WEB_MXH/index.php" class="btn" style="background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%); color: white; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: 600; display: flex; align-items: center; gap: 10px;">
+                            <a href="/WEB_MXH-main/index.php" class="btn" style="background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%); color: white; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: 600; display: flex; align-items: center; gap: 10px;">
                                 <i class="fa fa-sign-in"></i>
                                 Đăng nhập
                             </a>

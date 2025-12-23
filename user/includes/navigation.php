@@ -62,14 +62,14 @@ if (isLoggedIn()) {
                             </a>
                         </li>
                         <li class="user-menu-item">
-                            <a href="/WEB_MXH/logout.php" class="user-menu-link logout-link">
+                            <a href="/WEB_MXH-main/logout.php" class="user-menu-link logout-link">
                                 <i class="fa fa-sign-out"></i>
                                 <span>Đăng xuất</span>
                             </a>
                         </li>
                         <?php else: ?>
                             <li class="user-menu-item">
-                                <a href="/WEB_MXH/login.php" class="user-menu-link">
+                                <a href="/WEB_MXH-main/login.php" class="user-menu-link">
                                     <i class="fa fa-sign-in"></i>
                                     <span>Đăng nhập/Đăng ký
                                         
@@ -659,7 +659,7 @@ nav.navbar.bootsnav .navbar-toggle i {
                 <h3 style="margin-bottom: 20px; color: #333;">Cần Đăng Nhập</h3>
                 <p style="margin-bottom: 25px; color: #666;">${message}</p>
                 <div style="display: flex; gap: 15px; justify-content: center;">
-                    <a href="/WEB_MXH/login.php" class="btn" style="
+                    <a href="/WEB_MXH-main/login.php" class="btn" style="
                         background: linear-gradient(135deg, #412D3B 0%, #deccca 100%);
                         color: #412D3B;
                         padding: 12px 20px;

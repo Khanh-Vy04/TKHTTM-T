@@ -1,7 +1,7 @@
 <?php
 session_start();
 header('Content-Type: application/json');
-include $_SERVER['DOCUMENT_ROOT'] . "/WEB_MXH/config/database.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/WEB_MXH-main/config/database.php";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && strpos($_SERVER["CONTENT_TYPE"], "application/json") !== false) {
     $data = json_decode(file_get_contents("php://input"), true);
