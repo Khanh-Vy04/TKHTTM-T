@@ -80,17 +80,14 @@ if (isset($_POST['register'])) {
     $password = trim($_POST['reg_password']);
     $email = trim($_POST['reg_email']);
     $fullname = trim($_POST['reg_fullname']);
-    $gender = $_POST['reg_gender'];
-    $phone = trim($_POST['reg_phone']);
-    $address = trim($_POST['reg_address']);
+    // Đặt giá trị mặc định cho các trường không bắt buộc (không ảnh hưởng backend)
+    $gender = isset($_POST['reg_gender']) ? $_POST['reg_gender'] : '';
+    $phone = isset($_POST['reg_phone']) ? trim($_POST['reg_phone']) : '';
+    $address = isset($_POST['reg_address']) ? trim($_POST['reg_address']) : '';
     
-    // Validate input
-    if (empty($username) || empty($password) || empty($email) || empty($fullname) || empty($gender) || empty($phone) || empty($address)) {
+    // Validate input - chỉ kiểm tra các trường bắt buộc
+    if (empty($username) || empty($password) || empty($email) || empty($fullname)) {
         $register_error = "Vui lòng điền đầy đủ thông tin!";
-    } 
-    // Validate số điện thoại Việt Nam
-    elseif (!preg_match('/^(0|\+84)[0-9]{9}$/', $phone)) {
-        $register_error = "Số điện thoại không hợp lệ! Vui lòng nhập số điện thoại Việt Nam (10 số bắt đầu bằng 0 hoặc +84 theo sau 9 số).";
     } else {
         try {
             // Kiểm tra username và email đã tồn tại chưa
@@ -145,14 +142,14 @@ if (isset($_POST['register'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
-            background: #deccca;
+            background: #9CC6DB;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
         }
         .auth-container {
-            background: #f3eeeb;
+            background: #ffffff;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             overflow: hidden;
@@ -179,18 +176,18 @@ if (isset($_POST['register'])) {
             margin-bottom: 15px;
         }
         .btn-auth {
-            background: #deccca;
+            background: #9CC6DB;
             border: none;
             border-radius: 10px;
-            color: #412d3b;
+            color: #213448;
             padding: 12px;
             width: 100%;
             font-weight: 600;
             margin-top: 10px;
         }
         .btn-auth:hover {
-            background: #412d3b;
-            color: #deccca;
+            background: #7BB3D1;
+            color: #213448;
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
         }
@@ -205,7 +202,7 @@ if (isset($_POST['register'])) {
         }
         .text-center a {
             text-decoration: none;
-            color: #412d3b;
+            color: #7BB3D1;
             font-weight: 600;
         }
         .text-center a:hover {
@@ -316,39 +313,6 @@ if (isset($_POST['register'])) {
                                placeholder="Họ và tên" 
                                required>
                     </div>
-                    <div class="mb-3">
-                        <select class="form-control" 
-                                name="reg_gender" 
-                                id="reg_gender"
-                                autocomplete="sex" 
-                                required>
-                            <option value="">Chọn giới tính</option>
-                            <option value="Nam">Nam</option>
-                            <option value="Nữ">Nữ</option>
-                            <option value="Khác">Khác</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <input type="tel" 
-                               class="form-control" 
-                               name="reg_phone" 
-                               id="reg_phone"
-                               autocomplete="tel" 
-                               placeholder="Số điện thoại" 
-                               required>
-                        <div id="phone-error" class="text-danger small" style="display: none;">
-                            Số điện thoại không hợp lệ! Vui lòng nhập số điện thoại Việt Nam (10 số bắt đầu bằng 0 hoặc +84 theo sau 9 số).
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <input type="text" 
-                               class="form-control" 
-                               name="reg_address" 
-                               id="reg_address"
-                               autocomplete="street-address" 
-                               placeholder="Địa chỉ" 
-                               required>
-                    </div>
                     <button type="submit" name="register" class="btn btn-auth">
                         <i class="fas fa-user-plus me-2"></i> Đăng ký
                     </button>
@@ -360,33 +324,7 @@ if (isset($_POST['register'])) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     
     <script>
-        // Kiểm tra số điện thoại real-time
-        document.getElementById('reg_phone').addEventListener('input', function() {
-            const phone = this.value.trim();
-            const phoneError = document.getElementById('phone-error');
-            const phoneRegex = /^(0|\+84)[0-9]{9}$/;
-            
-            if (phone && !phoneRegex.test(phone)) {
-                phoneError.style.display = 'block';
-                this.classList.add('is-invalid');
-            } else {
-                phoneError.style.display = 'none';
-                this.classList.remove('is-invalid');
-            }
-        });
-        
-        // Kiểm tra khi submit form
-        document.getElementById('registerForm').addEventListener('submit', function(e) {
-            const phone = document.getElementById('reg_phone').value.trim();
-            const phoneRegex = /^(0|\+84)[0-9]{9}$/;
-            
-            if (!phoneRegex.test(phone)) {
-                e.preventDefault();
-                document.getElementById('phone-error').style.display = 'block';
-                document.getElementById('reg_phone').classList.add('is-invalid');
-                document.getElementById('reg_phone').focus();
-            }
-        });
+        // Form validation đã được xử lý bởi HTML5 required attributes
     </script>
 </body>
 </html> 

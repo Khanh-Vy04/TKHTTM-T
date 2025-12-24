@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thể Loại Nhạc - AuraDisc</title>
+    <title>Danh Sách Khóa Học - AuraDisc</title>
     
     <!-- Bootstrap CSS -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@ if ($result->num_rows > 0) {
         }
 
         .genre-card {
-            background: #f7f8f9; /* Changed from white */
+            background: white;
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
@@ -90,12 +90,12 @@ if ($result->num_rows > 0) {
         
         .genre-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 40px rgba(156, 198, 219, 0.3);
         }
         
         .genre-header {
-            background: linear-gradient(135deg, #412D3B 0%,rgb(255, 236, 234) 100%); /* Added gradient */
-            color: white; /* Changed to white */
+            background: linear-gradient(135deg, #9CC6DB 0%, #9CC6DB 100%);
+            color: white;
             padding: 30px 20px;
             text-align: center;
             position: relative;
@@ -139,11 +139,11 @@ if ($result->num_rows > 0) {
         }
         
         .view-products-btn {
-            background: #412D3B; /* Updated background */
-            color: white; /* Updated color */
+            background: #9CC6DB;
+            color: white;
             border: none;
-            padding: 8px 20px; /* Updated padding */
-            border-radius: 20px; /* Updated border-radius */
+            padding: 8px 20px;
+            border-radius: 20px;
             font-weight: 500;
             transition: all 0.3s ease;
             text-decoration: none;
@@ -154,9 +154,10 @@ if ($result->num_rows > 0) {
         
         .view-products-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(65, 45, 59, 0.4); /* Updated hover shadow */
-            color: #412d3b; /* Updated hover text color */
-            background: #deccca; /* Updated hover background */
+            box-shadow: 0 5px 15px rgba(156, 198, 219, 0.4);
+            color: #9CC6DB;
+            background: white;
+            border: 2px solid #9CC6DB;
             text-decoration: none;
         }
         
@@ -191,7 +192,7 @@ if ($result->num_rows > 0) {
 
             <!-- Tìm kiếm -->
             <div class="search-container">
-                <input type="text" class="search-box" id="searchInput" placeholder="Tìm kiếm thể loại nhạc...">
+                <input type="text" class="search-box" id="searchInput" placeholder="Tìm kiếm khóa học...">
                 <i class="fa fa-search search-icon"></i>
             </div>
 
@@ -200,18 +201,18 @@ if ($result->num_rows > 0) {
             <div class="grid-container" id="genresGrid">
                 <?php 
                 $genre_icons = [
-                    'Rock' => 'fa fa-music',
-                    'Pop' => 'fa fa-music',
-                    'Jazz' => 'fa fa-music',
-                    'Classical' => 'fa fa-music',
-                    'Electronic' => 'fa fa-music',
-                    'Hip Hop' => 'fa fa-music',
-                    'Country' => 'fa fa-music',
-                    'R&B' => 'fa fa-music'
+                    'Rock' => 'fa fa-book',
+                    'Pop' => 'fa fa-book',
+                    'Jazz' => 'fa fa-book',
+                    'Classical' => 'fa fa-book',
+                    'Electronic' => 'fa fa-book',
+                    'Hip Hop' => 'fa fa-book',
+                    'Country' => 'fa fa-book',
+                    'R&B' => 'fa fa-book'
                 ];
                 
                 foreach ($genres as $genre): 
-                    $icon = isset($genre_icons[$genre['genre_name']]) ? $genre_icons[$genre['genre_name']] : 'fa fa-music';
+                    $icon = isset($genre_icons[$genre['genre_name']]) ? $genre_icons[$genre['genre_name']] : 'fa fa-book';
                 ?>
                 <a href="../products.php?genre_id=<?php echo $genre['genre_id']; ?>" class="genre-card fade-in" data-name="<?php echo strtolower($genre['genre_name']); ?>">
                     <div class="genre-header">
@@ -220,8 +221,8 @@ if ($result->num_rows > 0) {
                         </div>
                         <h3 class="genre-name"><?php echo htmlspecialchars($genre['genre_name']); ?></h3>
                         <p class="genre-count">
-                            <i class="fa fa-music"></i>
-                            <?php echo $genre['product_count']; ?> sản phẩm
+                            <i class="fa fa-book"></i>
+                            <?php echo $genre['product_count']; ?> khóa học
                         </p>
                     </div>
                     
@@ -235,8 +236,8 @@ if ($result->num_rows > 0) {
             </div>
             <?php else: ?>
             <div class="no-results">
-                <i class="fa fa-tags"></i>
-                <p>Hiện tại chưa có thể loại nhạc nào.</p>
+                <i class="fa fa-book"></i>
+                <p>Hiện tại chưa có khóa học nào.</p>
             </div>
             <?php endif; ?>
         </div>
@@ -255,7 +256,7 @@ if ($result->num_rows > 0) {
     <script src="../assets/js/custom-search.js"></script>
 
     <script>
-        // Tìm kiếm thể loại
+        // Tìm kiếm khóa học
         document.getElementById('searchInput').addEventListener('input', function() {
             const searchTerm = this.value.toLowerCase();
             const genreCards = document.querySelectorAll('.genre-card');
